@@ -1,0 +1,123 @@
+/* ===== Global Styles ===== */
+* { box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Optional page title (if you add an <h1>) */
+h1 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* ===== Table Container: center and responsive ===== */
+.table-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto; /* horizontal scroll on small screens */
+  padding-bottom: 1rem;
+}
+
+/* ===== Table Styling ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(3, 19, 44, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 900px; /* keep layout stable; scroll on narrow screens */
+}
+
+/* Use CSS border (not HTML border attribute) */
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+th {
+  background: linear-gradient(90deg,#003366,#0059b3);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+
+/* Header time row (second row of headers) */
+tr:nth-child(2) th {
+  background: #074a84;
+  font-weight: 600;
+}
+
+/* Body row hover */
+tbody tr:hover td {
+  background: #f1f6ff;
+  transition: background 0.18s ease;
+}
+
+/* Rowspan and colspan appearance */
+td[rowspan], th[rowspan] {
+  background: #fafafa;
+  color: #003366;
+  font-weight: 700;
+}
+
+/* Small-screen typography */
+@media (max-width: 900px) {
+  th, td { padding: 0.5rem 0.6rem; font-size: 0.88rem; }
+  table { min-width: 700px; }
+}
+@media (max-width: 600px) {
+  table { min-width: 600px; }
+  iframe, img { max-width: 100%; height: auto; }
+}
+
+/* ===== Color coding by class (reliable) ===== */
+.sub-el101 { background: #b3e5fc; }  /* Light blue */
+.sub-as101 { background: #ffe0b2; }  /* Light orange */
+.sub-cs101 { background: #c8e6c9; }  /* Light green */
+.sub-ai101 { background: #f8bbd0; }  /* Light pink */
+.sub-as103 { background: #fff9c4; }  /* Light yellow */
+.sub-va151 { background: #d1c4e9; }  /* Light purple */
+.sub-me152 { background: #ffccbc; }  /* Light peach */
+.lunch     { background: #f7f7f7; font-weight: 800; color: #003366; }
+.mentor    { background: #cfd8dc; font-style: italic; }
+
+/* If you want darker text for better contrast */
+td[class^="sub-"] { color: #111; }
+
+/* ===== Nice small-screen caption / legend (optional) ===== */
+.legend {
+  max-width: 1100px;
+  margin: 0.6rem auto 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.legend .item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #eceff4;
+}
+.legend .swatch { width: 18px; height: 18px; border-radius: 4px; display: inline-block; }
+
+/* match swatches to class colors */
+.legend .sw-el101 .swatch { background: #b3e5fc; }
+.legend .sw-as101 .swatch { background: #ffe0b2; }
+.legend .sw-cs101 .swatch { background: #c8e6c9; }

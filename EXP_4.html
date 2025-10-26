@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+    <link rel="stylesheet" href="EXP_4.css">
+</head>
+<body>
+
+    <header>
+        <h1>Grand Horizon Hotel</h1>
+        <p>Book your stay with comfort and convenience</p>
+    </header>
+
+    <section class="form-section">
+        <h2>Room Booking Form</h2>
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="roomtype">Room Type:</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="">-- Select Room Type --</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Luxury Suite</option>
+                    <option value="family">Family Room</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="requests">Special Requests:</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="Any special requirements (e.g. early check-in, extra bed)..."></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">Book Now</button>
+                <button type="reset" class="reset-btn">Clear</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Grand Horizon Hotel | Contact: <a href="mailto:info@grandhorizon.com">info@grandhorizon.com</a></p>
+        <p>MADE BY ANSH KAUSHIK (2025B010110345)</p>
+    </footer>
+
+</body>
+</html>

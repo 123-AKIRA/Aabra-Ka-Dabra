@@ -1,0 +1,135 @@
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #003366, #0059b3);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* ===== Form Section ===== */
+.form-section {
+  max-width: 600px;
+  background-color: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Form Layout ===== */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #003366;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0059b3;
+}
+
+/* ===== Buttons ===== */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #0059b3;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #003d80;
+}
+
+.reset-btn {
+  background-color: #ccc;
+  color: #222;
+}
+
+.reset-btn:hover {
+  background-color: #aaa;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .form-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  button {
+    width: 48%;
+  }
+}
