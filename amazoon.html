@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazoon</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+  }
+  header {
+    background-color: #232f3e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  header img {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  nav {
+    background-color: #ff9900;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    background-color: #ff9900;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover {
+    background-color: #232f3e;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: #232f3e;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+  }
+  .dropdown-content a:hover {
+    background-color: #ff9900;
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  section {
+    padding: 10px;
+  }
+  h2 {
+    color: #232f3e;
+    text-align: center;
+  }
+
+  .main-table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  .main-table td {
+    border: 2px solid #ddd;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .product-table {
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+  }
+  .product-table th, .product-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    background: white;
+  }
+  .product-table th {
+    background-color: #ff9900;
+    color: white;
+  }
+
+  td img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="Amazoon.png" alt="Amazoon Logo">
+  <h1>Welcome to Amazoon</h1>
+  <p>Bam Bam Dam Dam</p>
+</header>
+
+<nav>
+  <div class="dropdown">
+    <button class="dropbtn">Laptops</button>
+    <div class="dropdown-content">
+      <a href="#laptops">Laptop Pro 15</a>
+      <a href="#laptops">UltraBook X2</a>
+      <a href="#laptops">Gaming Beast 5000</a>
+      <a href="#laptops">WorkMate Slim</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Watches</button>
+    <div class="dropdown-content">
+      <a href="#watches">TimePro X</a>
+      <a href="#watches">Classic Leather</a>
+      <a href="#watches">Runner Smartwatch</a>
+      <a href="#watches">Minimalist Quartz</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Mobiles</button>
+    <div class="dropdown-content">
+      <a href="#mobiles">Amazoon One</a>
+      <a href="#mobiles">Pixelator Z</a>
+      <a href="#mobiles">Galaxy Wave</a>
+      <a href="#mobiles">NexPhone Lite</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Earbuds</button>
+    <div class="dropdown-content">
+      <a href="#earbuds">AirDots Pro</a>
+      <a href="#earbuds">BassMax 200</a>
+      <a href="#earbuds">SoundPebble Mini</a>
+      <a href="#earbuds">Echo Buds</a>
+    </div>
+  </div>
+</nav>
+
+<table class="main-table">
+  <tr>
+    <td id="laptops">
+      <h2>Laptops</h2>
+      <table class="product-table">
+        <tr>
+          <td>
+            <img src="https://m.media-amazon.com/images/I/71yKxEaoVqL.jpg" alt="Laptop Pro 15">
+            <strong>Laptop Pro 15</strong><br>Powerful and portable for professionals.
+          </td>
+          <td>
+            <img src="https://m.media-amazon.com/images/I/81awO2PTWzL.jpg" alt="UltraBook X2">
+            <strong>UltraBook X2</strong><br>Lightweight design with long battery life.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQVXgG6SweiwsyNDd4ZP4Z07yYmshPpIXp10ch3NmZ0bharKBeTJbNEzV-MEdzjNVQXOwLxXe_57Lj35hLc_d6e3Er56G9JSJcD6Bu6i46YPA4S4sfF_kk2" alt="Gaming Beast 5000">
+            <strong>Gaming Beast 5000</strong><br>For gamers who fear no frame drops.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS3FgWaCkNfmXleW0xstKHqWslGSVLO62950u-pOZN32LFHdiQQ_Rzm316TtnMNRu8y5t71uugfMQZwriyrkPzQMn7q2GSi7H1K9x9T3j5PehG7hfSzgdG6RA" alt="WorkMate Slim">
+            <strong>WorkMate Slim</strong><br>Perfect balance of performance and style.
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td id="earbuds">
+      <h2>Earbuds</h2>
+      <table class="product-table">
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSRcgeY5hsOD4EClXhBtLINSoL7oLxYVGTP5s2n-BCk8RCpwqhHMXzwCg70c98Dugvpv6gOEdakk0_rZYSzfv_awW7kguVLPpMhrh4ECldhCY4d82gyQ4txzQ" alt="AirDots Pro">
+            <strong>AirDots Pro</strong><br>Clear sound, invisible price tag.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTPCxHqW7o5eqM5awun3KrKpjx7C5V-MsHAPkz4kMr0Rv32vYaptNV_-o1juCn7kz5uFEQXwE1pJGY8HjI7SEYQY-FDmePJVVUa9jTHxJ5a" alt="BassMax 200">
+            <strong>BassMax 200</strong><br>Deep bass that could shake your soul.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQY67RoiL03eQczvxebp5WveWxIRFpEZU-xfDm0jjPBwgAJzNw4TEIckboKRMrOTuc6ILc0Abtknb72B5x468HERnkz3eD8aKUR4eZu-CKahPY-lJ3of9_v" alt="SoundPebble Mini">
+            <strong>SoundPebble Mini</strong><br>Compact design with surprising punch.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQeDmgGcriYdmJGctMci3s5azS-uUKOtkoYvEtpP_xETI27IhLoSX99I9ORNA3lGQS3ua7Xjpd90KAYKvWbWvK0341Gt6m-EGVchXzmr-8" alt="Echo Buds">
+            <strong>Echo Buds</strong><br>Talk to yourself, but louder.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td id="mobiles">
+      <h2>Mobile Phones</h2>
+      <table class="product-table">
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRyQffNQ8J6L4GTW3t3lc1mHMCFbs4D5HqUcmlbC8XMayuncRqUKaUzLRR__rPwQKCPmq0wGFFYxhql8c__bgKCdo-z13hM7s2OE0TbKxH8" alt="Amazoon One">
+            <strong>Amazoon One</strong><br>Fast, sleek, and definitely not a knockoff.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcScQ7wQnMJQBmCplRMLOc51dnEFIwsKOTJ3Jo6QMYUZ0Mjpygz1Yg5XBJ0L3v9HHT1jR_rgr2RJH6V3DlLA9-9_PfeiaKvLyG7peqR6_KhBbgBi_-wd6VcA" alt="Pixelator Z">
+            <strong>Pixelator Z</strong><br>Capture every moment, including boredom.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQB7LndB_ABHSwm_DQbyCjkJJenQQtieI3Pc7Zv9KOWHZgAR2C87NJvkm1-EY1KxoAfzgm_YKZ-yImsau4wfiLYFDGeuwRV0oLFMW7ji3jVdMz6Jbl9VXKj" alt="Galaxy Wave">
+            <strong>Galaxy Wave</strong><br>Performance so smooth, it’s suspicious.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQDSLL_Bp4YirkmTlXjcY5TkHh6WcHJxL1w4rysoZNTsQZ8K7mpRLCUyyC1QLDBIw6VXfvqe3gBCcX97fzswpm-ZQPVYufJn0PzawkBG7cJTks9Sa9ONgn3jw" alt="NexPhone Lite">
+            <strong>NexPhone Lite</strong><br>Affordable innovation at its vaguest.
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td id="watches">
+      <h2>Watches</h2>
+      <table class="product-table">
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSXzsis9WYl4mRSRzNpxUy9g7BjiBT5yBQoH07A2D8UBbdqYO4LWwAmMSzh6hEskO_12bBhoUHrTPRgWfVxRIFdKJwSP-TVPhJTkc-NO2V2Q6G8PaaxWFmA" alt="TimePro X">
+            <strong>TimePro X</strong><br>Modern smartwatch for busy people.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTh3RzD740lWaqW3XvgPR35fgRRHYys2HwYUcxQRSaEt5w_B-MQ15V9EBNP08ImKeniwxngDmWJQ_Eg_ziPL3PQmcw2KPcvySr8h2sFkw3okLsiDQVpo-av" alt="Classic Leather">
+            <strong>Classic Leather</strong><br>Old-school charm meets reliability.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQYiWReTTdrkM5FsHZKulr_QLcszUI8RHGcOn6iFqy11BaV3EOi-7PEJ6H8n1IaSK4fy1s0wIXXvC7HkyckVJoyDFgil3RWbhCeQOLPC5QdWXSEpL4L_gtHn74" alt="Runner Smartwatch">
+            <strong>Runner Smartwatch</strong><br>Track every step, even the lazy ones.
+          </td>
+          <td>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS00gvGZtnJ6N3Paeo_03PgNIuj94F5JyYIkzsNg5-sDAfBtpKLp_PlhJtitJKDF3PpxIZvHATlkRfuCgn1BDqBNmvWwijBmjDcAwpOsva8aq7B4nv5Gmz-" alt="Minimalist Quartz">
+            <strong>Minimalist Quartz</strong><br>Simple. Elegant. Possibly late.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<footer>
+  <p>&copy; 2025 Amazoon. All rights reserved (not really).</p>
+</footer>
+
+</body>
+</html>
