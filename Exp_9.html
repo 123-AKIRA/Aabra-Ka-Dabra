@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 60px auto 40px;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 150px auto;
+    border-bottom: 2px solid black;
+}
+
+.sidebar {
+    border-right: 2px solid black;
+    padding: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">My Header</div>
+
+    <div class="main">
+
+        <div class="sidebar">
+            Link 1 <br><br>
+            Link 2 <br><br>
+            Link 3
+        </div>
+
+        <div class="content">
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">Footer</div>
+
+</div>
+
+</body>
+</html>

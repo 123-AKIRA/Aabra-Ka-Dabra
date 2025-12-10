@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            background: #202A44;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .margin-box {
+            background: #DB6551;
+            padding: 20px;
+        }
+
+        .border-box {
+            background: #1abc9c;
+            padding: 20px;
+        }
+
+        .padding-box {
+            background: #f9c74f;
+            padding: 20px;
+        }
+
+        .content-box {
+            background: #1a98a6;
+            width: 250px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .label {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CSS Box Model</h1>
+
+    <div class="margin-box">
+        <div class="label">Margin</div>
+
+        <div class="border-box">
+            <div class="label">Border</div>
+
+            <div class="padding-box">
+                <div class="label">Padding</div>
+
+                <div class="content-box">
+                    Content
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
